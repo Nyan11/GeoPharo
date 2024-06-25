@@ -23,10 +23,14 @@ BaselineOfGameGeoPharo >> baselineForCommon: spec [
 	"Dependencies"
 	self pyramidDependencies: spec.
 
+	"packages"
+	spec package: 'Pyramid'.
+	spec
+		package: 'GameGeoPharo'
+		with: [ spec requires: #( 'Pyramid' ) ].
 
 	"Groups"
-	spec group: 'default' with: #( 'GameGeoPharo').
-
+	spec group: 'default' with: #( 'GameGeoPharo' )
 ]
 
 { #category : 'baselines' }
@@ -34,5 +38,5 @@ BaselineOfGameGeoPharo >> pyramidDependencies: spec [
 
 	spec
 		baseline: 'Pyramid'
-		with: [ spec repository: 'github://OpenSmock/Pyramid:master/src' ].
+		with: [ spec repository: 'github://OpenSmock/Pyramid:main/src' ]
 ]
