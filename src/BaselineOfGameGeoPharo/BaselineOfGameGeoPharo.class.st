@@ -17,9 +17,6 @@ BaselineOfGameGeoPharo >> baseline: spec [
 BaselineOfGameGeoPharo >> baselineForCommon: spec [
 
 	<baseline>
-	spec preLoadDoIt: #preload:package:.
-	spec postLoadDoIt: #postload:package:.
-
 	"Dependencies"
 	spec
 		baseline: 'Pyramid'
