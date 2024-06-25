@@ -21,22 +21,10 @@ BaselineOfGameGeoPharo >> baselineForCommon: spec [
 	spec postLoadDoIt: #postload:package:.
 
 	"Dependencies"
-	self pyramidDependencies: spec.
-
-	"packages"
-	spec package: 'Pyramid'.
-	spec
-		package: 'GameGeoPharo'
-		with: [ spec requires: #( 'Pyramid' ) ].
-
-	"Groups"
-	spec group: 'default' with: #( 'GameGeoPharo' )
-]
-
-{ #category : 'baselines' }
-BaselineOfGameGeoPharo >> pyramidDependencies: spec [
-
 	spec
 		baseline: 'Pyramid'
-		with: [ spec repository: 'github://OpenSmock/Pyramid:main/src' ]
+		with: [ spec repository: 'github://OpenSmock/Pyramid:main/src' ].
+
+	"packages"
+	spec package: 'GameGeoPharo' with: [ spec requires: #( 'Pyramid' ) ]
 ]
