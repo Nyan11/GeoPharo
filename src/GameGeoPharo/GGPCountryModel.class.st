@@ -8,8 +8,9 @@ Class {
 	#classInstVars : [
 		'allcountries'
 	],
-	#category : 'GameGeoPharo',
-	#package : 'GameGeoPharo'
+	#category : 'GameGeoPharo-models',
+	#package : 'GameGeoPharo',
+	#tag : 'models'
 }
 
 { #category : 'as yet unclassified' }
@@ -23,7 +24,7 @@ GGPCountryModel class >> allCountries [
 GGPCountryModel class >> countriesDirectory [
 
 	| expectedName myRepository |
-	expectedName := 'gamegeopharo'.
+	expectedName := 'geopharo'.
 
 	myRepository := IceRepository registry
 		                detect: [ :each |
@@ -33,15 +34,29 @@ GGPCountryModel class >> countriesDirectory [
 				                ('Did not find any repository named ''{1}'' in Iceberg (case insensitive). Alexandrie tests require it to access resources.'
 					                 format: { expectedName }) ].
 
-	^ myRepository location
+	^ myRepository location / 'ressources'
 ]
 
 { #category : 'as yet unclassified' }
 GGPCountryModel class >> loadAllCountries [
 
-	| directory |
+	| directory jsonFile jsonDict |
 	directory := self countriesDirectory asFileReference.
+	jsonFile := directory / 'countries.json'.
+	jsonDict := STONJSON fromStream: jsonFile readStream.
 	
+	allcountries := jsonDict associations
+		collect: [ :each |
+			| model pngFile |
+			model := self new
+				         countryName: each key;
+				         yourself.
+			pngFile := directory / (each value asLowercase , '.png').
+			pngFile ifExists: [
+				model countryFlag: (PNGReadWriter formFromFileNamed: pngFile) ].
+			model ]
+		thenReject: [ :each |
+		each countryName isNil or: [ each countryFlag isNil ] ]
 ]
 
 { #category : 'accessing' }
