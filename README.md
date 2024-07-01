@@ -4,8 +4,8 @@ How to install:
 
 ```st
 Metacello new
-	baseline: 'Pyramid';
-	repository: 'github://OpenSmock/Pyramid:main/src';
+	baseline: 'GameGeoPharo';
+	repository: 'github://Nyan11/GeoPharo:main/src';
 	load.
 ```
 
