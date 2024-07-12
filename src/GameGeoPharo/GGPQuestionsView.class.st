@@ -10,1252 +10,245 @@ Class {
 
 { #category : 'pyramid-serialized-bloc' }
 GGPQuestionsView class >> pyston [
-	"This class has been generated using Pyramid.
-
-	By: YannLEGOFF
-	2024-06-25 09:54:59"
-
-	<pySTON>
-	^ '[
-	BlElement {
-		#children : BlChildrenArray [
-			BlElement {
-				#children : BlChildrenArray [
-					BlTextElement {
-						#children : BlChildrenArray [ ],
-						#constraints : BlLayoutCommonConstraints {
-							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutFitContentResizer { }
-							},
-							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @10
-							},
-							#constraints : {
-								Class [ #BlFrameLayout ] : BlFrameLayoutConstraints {
-									#vertical : BlFrameLayoutConstraintsVertical {
-										#alignment : BlTopAlignment { },
-										#weight : 1.0
-									},
-									#horizontal : BlFrameLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalCenterAlignment { },
-										#weight : 1.0
-									}
-								}
-							},
-							#position : Point [ 0.0, 0.0 ],
-							#margin : BlInsets {
-								#top : 15.0,
-								#left : 15.0,
-								#bottom : 15.0,
-								#right : 15.0
-							},
-							#padding : BlInsets {
-								#top : 0.0,
-								#left : 0.0,
-								#bottom : 0.0,
-								#right : 0.0
-							},
-							#minHeight : 0.0,
-							#minWidth : 0.0,
-							#maxHeight : Float [ #infinity ],
-							#maxWidth : @22,
-							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @14,
-							#previouslyAccessedConstraintsType : @13,
-							#accountTransformation : false
-						},
-						#visuals : BlDefaultVisuals { },
-						#userData : IdentityDictionary {
-							#elementId : BlElementNamedId {
-								#identifier : #questionsLeft
-							}
-						},
-						#layout : BlBasicLayout { },
-						#text : BlRopedText {
-							#rope : BlCollectionRope {
-								#collection : ''1 question(s) left''
-							}
-						}
-					},
-					BlElement {
-						#children : BlChildrenArray [ ],
-						#constraints : BlLayoutCommonConstraints {
-							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutExactResizer {
-									#size : 320.0
-								}
-							},
-							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutExactResizer {
-									#size : 320.0
-								}
-							},
-							#constraints : {
-								@13 : BlFrameLayoutConstraints {
-									#vertical : BlFrameLayoutConstraintsVertical {
-										#alignment : BlVerticalCenterAlignment { },
-										#weight : 1.0
-									},
-									#horizontal : BlFrameLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalCenterAlignment { },
-										#weight : 1.0
-									}
-								}
-							},
-							#position : Point [ 0.0, 0.0 ],
-							#margin : BlInsets {
-								#top : 40.0,
-								#left : 0.0,
-								#bottom : 20.0,
-								#right : 0.0
-							},
-							#padding : BlInsets {
-								#top : 0.0,
-								#left : 0.0,
-								#bottom : 0.0,
-								#right : 0.0
-							},
-							#minHeight : 0.0,
-							#minWidth : 0.0,
-							#maxHeight : @22,
-							#maxWidth : @22,
-							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @37,
-							#previouslyAccessedConstraintsType : @13,
-							#accountTransformation : false
-						},
-						#visuals : BlCustomVisuals {
-							#background : BlTransparentBackground {
-								
-							}
-						},
-						#userData : IdentityDictionary {
-							#elementId : BlElementNamedId {
-								#identifier : #image
-							}
-						},
-						#layout : BlFrameLayout { }
-					}
-				],
-				#constraints : BlLayoutCommonConstraints {
-					#vertical : BlLayoutCommonConstraintsAxis {
-						#resizer : BlLayoutFitContentResizer { }
-					},
-					#horizontal : BlLayoutCommonConstraintsAxis {
-						#resizer : BlLayoutMatchParentResizer { }
-					},
-					#constraints : {
-						@13 : BlFrameLayoutConstraints {
-							#vertical : BlFrameLayoutConstraintsVertical {
-								#alignment : BlTopAlignment { },
-								#weight : 1.0
-							},
-							#horizontal : BlFrameLayoutConstraintsHorizontal {
-								#alignment : BlHorizontalStartAlignment { },
-								#weight : 1.0
-							}
-						}
-					},
-					#position : Point [ 0.0, 0.0 ],
-					#margin : BlInsets {
-						#top : 20.0,
-						#left : 40.0,
-						#bottom : 20.0,
-						#right : 40.0
-					},
-					#padding : BlInsets {
-						#top : 0.0,
-						#left : 0.0,
-						#bottom : 0.0,
-						#right : 0.0
-					},
-					#minHeight : 0.0,
-					#minWidth : 0.0,
-					#maxHeight : @22,
-					#maxWidth : @22,
-					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @56,
-					#previouslyAccessedConstraintsType : @13,
-					#accountTransformation : false
-				},
-				#visuals : BlCustomVisuals {
-					#geometry : BlRoundedRectangleGeometry {
-						#extent : Point [ 720.0, 380.0 ],
-						#pathCache : BlPathCache {
-							#geometry : @65
-						},
-						#cornerRadii : BlCornerRadii {
-							#topLeft : 24,
-							#topRight : 24,
-							#bottomLeft : 24,
-							#bottomRight : 24
-						},
-						#center : Point [ 360.0, 190.0 ]
-					},
-					#background : BlPaintBackground {
-						#paint : BlColorPaint {
-							#color : Color {
-								#red : 1.0,
-								#green : 1.0,
-								#blue : 1.0,
-								#alpha : 0.7490196078431373
-							}
-						}
-					}
-				},
-				#userData : IdentityDictionary {
-					#elementId : BlElementNamedId {
-						#identifier : #container
-					}
-				},
-				#layout : BlFrameLayout { }
-			},
-			BlElement {
-				#children : BlChildrenArray [
-					ToButton {
-						#constraints : BlLayoutCommonConstraints {
-							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutFitContentResizer { }
-							},
-							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutMatchParentResizer { }
-							},
-							#constraints : {
-								Class [ #BlLinearLayout ] : BlLinearLayoutConstraints {
-									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @16
-									},
-									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalStartAlignment { }
-									},
-									#weight : 1
-								},
-								@13 : BlFrameLayoutConstraints {
-									#vertical : BlFrameLayoutConstraintsVertical {
-										#alignment : BlVerticalCenterAlignment { },
-										#weight : 1.0
-									},
-									#horizontal : BlFrameLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalCenterAlignment { },
-										#weight : 1.0
-									}
-								}
-							},
-							#position : Point [ 0.0, 0.0 ],
-							#margin : BlInsets {
-								#top : 0.0,
-								#left : 0.0,
-								#bottom : 20.0,
-								#right : 0.0
-							},
-							#padding : BlInsets {
-								#top : 4.0,
-								#left : 8.0,
-								#bottom : 4.0,
-								#right : 8.0
-							},
-							#minHeight : 0.0,
-							#minWidth : 0.0,
-							#maxHeight : @22,
-							#maxWidth : @22,
-							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @86,
-							#previouslyAccessedConstraintsType : @85,
-							#accountTransformation : false
-						},
-						#visuals : BlCustomVisuals {
-							#geometry : BlRoundedRectangleGeometry {
-								#extent : Point [ 300.0, 25.598 ],
-								#pathCache : BlPathCache {
-									#geometry : @99
-								},
-								#cornerRadii : BlCornerRadii {
-									#topLeft : 6,
-									#topRight : 6,
-									#bottomLeft : 6,
-									#bottomRight : 6
-								},
-								#center : Point [ 150.0, 12.799 ]
-							},
-							#border : BlBorder {
-								#paint : BlColorPaint {
-									#color : Color {
-										#red : 0.8514173998044966,
-										#green : 0.8514173998044966,
-										#blue : 0.8514173998044966,
-										#alpha : 1.0
-									}
-								},
-								#width : 1,
-								#style : BlStrokeStyle {
-									#lineCap : BlStrokeLineButtCap { },
-									#lineJoin : BlStrokeLineMiterJoin { },
-									#miterLimit : 4.0,
-									#dashArray : [ ],
-									#dashOffset : 0.0
-								},
-								#opacity : 1.0
-							},
-							#background : BlPaintBackground {
-								#paint : BlColorPaint {
-									#color : Color [ #white ]
-								}
-							},
-							#mouseCursor : CursorWithMask {
-								#bits : Bitmap [
-									0,
-									1073741824,
-									1610612736,
-									1879048192,
-									2013265920,
-									2080374784,
-									2113929216,
-									2130706432,
-									2080374784,
-									2080374784,
-									1275068416,
-									100663296,
-									100663296,
-									50331648,
-									50331648,
-									0
-								],
-								#width : 16,
-								#height : 16,
-								#depth : 1,
-								#offset : Point [ -1, -1 ],
-								#maskForm : Form {
-									#bits : Bitmap [
-										3221225472,
-										3758096384,
-										4026531840,
-										4160749568,
-										4227858432,
-										4261412864,
-										4278190080,
-										4286578688,
-										4278190080,
-										4261412864,
-										4261412864,
-										3472883712,
-										251658240,
-										125829120,
-										125829120,
-										50331648
-									],
-									#width : 16,
-									#height : 16,
-									#depth : 1,
-									#offset : Point [ 0, 0 ]
-								}
-							}
-						},
-						#userData : IdentityDictionary {
-							#elementId : BlElementNamedId {
-								#identifier : #button
-							},
-							#stonLabeledIcon : ToLabeledIcon {
-								#constraints : BlLayoutCommonConstraints {
-									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @81
-									},
-									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : BlLayoutMatchParentResizer { }
-									},
-									#constraints : {
-										@85 : BlLinearLayoutConstraints {
-											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : BlTopAlignment { }
-											},
-											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : BlHorizontalStartAlignment { }
-											},
-											#weight : 1
-										}
-									},
-									#position : Point [ 0.0, 0.0 ],
-									#margin : BlInsets {
-										#top : 0.0,
-										#left : 0.0,
-										#bottom : 0.0,
-										#right : 0.0
-									},
-									#padding : @134,
-									#minHeight : 0.0,
-									#minWidth : 0.0,
-									#maxHeight : @22,
-									#maxWidth : @22,
-									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @128,
-									#previouslyAccessedConstraintsType : @85,
-									#accountTransformation : false
-								},
-								#visuals : BlDefaultVisuals { },
-								#userData : IdentityDictionary {
-									#stonToLabel : ToLabel {
-										#constraints : BlLayoutCommonConstraints {
-											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : BlLayoutFitContentResizer { }
-											},
-											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#constraints : {
-												@13 : BlFrameLayoutConstraints {
-													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : BlTopAlignment { },
-														#weight : 1.0
-													},
-													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : BlHorizontalStartAlignment { },
-														#weight : 1.0
-													}
-												}
-											},
-											#position : Point [ 0.0, 0.0 ],
-											#margin : BlInsets {
-												#top : 0.0,
-												#left : 0.0,
-												#bottom : 0.0,
-												#right : 0.0
-											},
-											#padding : @149,
-											#minHeight : 0.0,
-											#minWidth : 0.0,
-											#maxHeight : @22,
-											#maxWidth : @22,
-											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @143,
-											#previouslyAccessedConstraintsType : @13,
-											#accountTransformation : false
-										},
-										#visuals : BlDefaultVisuals { },
-										#userData : IdentityDictionary {
-											#stonToLabelText : BlRopedText {
-												#rope : BlAttributeRope {
-													#attributes : [
-														BlFontWeightAttribute {
-															#isOverwritableByStyler : true,
-															#weight : 600
-														},
-														BlFontFamilyDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#name : ''SFMono-Regular''
-														},
-														BlFontSizeDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#size : 14
-														},
-														AlbTextParagraphLineSpacingAttribute {
-															#isOverwritableByStyler : true,
-															#lineSpacing : 1.5
-														},
-														BlTextForegroundAttribute {
-															#isOverwritableByStyler : true,
-															#paint : Color [ #black ]
-														}
-													],
-													#rope : BlCollectionRope {
-														#collection : ''Timor-Leste''
-													}
-												}
-											},
-											#enabled : true
-										},
-										#layout : BlFrameLayout { }
-									},
-									#stonToImage : nil,
-									#enabled : true
-								},
-								#layout : BlLinearLayout {
-									#weightSum : 0,
-									#verticalAlignment : BlNullVerticalAlignment { },
-									#horizontalAlignment : BlNullHorizontalAlignment { },
-									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @163
-									},
-									#shouldUseLargestChild : false,
-									#cellSpacing : 0.0,
-									#interspace : 0.0
-								}
-							},
-							#enabled : true
-						},
-						#layout : BlLinearLayout {
-							#weightSum : 0,
-							#verticalAlignment : @164,
-							#horizontalAlignment : @165,
-							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @167
-							},
-							#shouldUseLargestChild : false,
-							#cellSpacing : 0.0,
-							#interspace : 0.0
-						}
-					},
-					ToButton {
-						#constraints : BlLayoutCommonConstraints {
-							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutFitContentResizer { }
-							},
-							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @83
-							},
-							#constraints : {
-								@85 : BlLinearLayoutConstraints {
-									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @16
-									},
-									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @89
-									},
-									#weight : 1
-								},
-								@13 : BlFrameLayoutConstraints {
-									#vertical : BlFrameLayoutConstraintsVertical {
-										#alignment : BlVerticalCenterAlignment { },
-										#weight : 1.0
-									},
-									#horizontal : BlFrameLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalCenterAlignment { },
-										#weight : 1.0
-									}
-								}
-							},
-							#position : Point [ 0.0, 0.0 ],
-							#margin : @96,
-							#padding : BlInsets {
-								#top : 4.0,
-								#left : 8.0,
-								#bottom : 4.0,
-								#right : 8.0
-							},
-							#minHeight : 0.0,
-							#minWidth : 0.0,
-							#maxHeight : @22,
-							#maxWidth : @22,
-							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @175,
-							#previouslyAccessedConstraintsType : @85,
-							#accountTransformation : false
-						},
-						#visuals : BlCustomVisuals {
-							#geometry : BlRoundedRectangleGeometry {
-								#extent : Point [ 300.0, 25.598 ],
-								#pathCache : BlPathCache {
-									#geometry : @186
-								},
-								#cornerRadii : BlCornerRadii {
-									#topLeft : 6,
-									#topRight : 6,
-									#bottomLeft : 6,
-									#bottomRight : 6
-								},
-								#center : Point [ 150.0, 12.799 ]
-							},
-							#border : BlBorder {
-								#paint : BlColorPaint {
-									#color : @106
-								},
-								#width : 1,
-								#style : BlStrokeStyle {
-									#lineCap : @108,
-									#lineJoin : @109,
-									#miterLimit : 4.0,
-									#dashArray : @110,
-									#dashOffset : 0.0
-								},
-								#opacity : 1.0
-							},
-							#background : BlPaintBackground {
-								#paint : BlColorPaint {
-									#color : @113
-								}
-							},
-							#mouseCursor : @114
-						},
-						#userData : IdentityDictionary {
-							#elementId : BlElementNamedId {
-								#identifier : #button
-							},
-							#stonLabeledIcon : ToLabeledIcon {
-								#constraints : BlLayoutCommonConstraints {
-									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @172
-									},
-									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : BlLayoutMatchParentResizer { }
-									},
-									#constraints : {
-										@85 : BlLinearLayoutConstraints {
-											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : BlTopAlignment { }
-											},
-											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : BlHorizontalStartAlignment { }
-											},
-											#weight : 1
-										}
-									},
-									#position : Point [ 0.0, 0.0 ],
-									#margin : BlInsets {
-										#top : 0.0,
-										#left : 0.0,
-										#bottom : 0.0,
-										#right : 0.0
-									},
-									#padding : @210,
-									#minHeight : 0.0,
-									#minWidth : 0.0,
-									#maxHeight : @22,
-									#maxWidth : @22,
-									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @204,
-									#previouslyAccessedConstraintsType : @85,
-									#accountTransformation : false
-								},
-								#visuals : BlDefaultVisuals { },
-								#userData : IdentityDictionary {
-									#stonToLabel : ToLabel {
-										#constraints : BlLayoutCommonConstraints {
-											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#constraints : {
-												@13 : BlFrameLayoutConstraints {
-													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @145,
-														#weight : 1.0
-													},
-													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @147,
-														#weight : 1.0
-													}
-												}
-											},
-											#position : Point [ 0.0, 0.0 ],
-											#margin : @149,
-											#padding : @149,
-											#minHeight : 0.0,
-											#minWidth : 0.0,
-											#maxHeight : @22,
-											#maxWidth : @22,
-											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @218,
-											#previouslyAccessedConstraintsType : @13,
-											#accountTransformation : false
-										},
-										#visuals : @150,
-										#userData : IdentityDictionary {
-											#stonToLabelText : BlRopedText {
-												#rope : BlAttributeRope {
-													#attributes : [
-														BlFontWeightAttribute {
-															#isOverwritableByStyler : true,
-															#weight : 600
-														},
-														BlFontFamilyDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#name : ''SFMono-Regular''
-														},
-														BlFontSizeDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#size : 14
-														},
-														AlbTextParagraphLineSpacingAttribute {
-															#isOverwritableByStyler : true,
-															#lineSpacing : 1.5
-														},
-														BlTextForegroundAttribute {
-															#isOverwritableByStyler : true,
-															#paint : @160
-														}
-													],
-													#rope : BlCollectionRope {
-														#collection : ''Mexico''
-													}
-												}
-											},
-											#enabled : true
-										},
-										#layout : BlFrameLayout { }
-									},
-									#stonToImage : nil,
-									#enabled : true
-								},
-								#layout : BlLinearLayout {
-									#weightSum : 0,
-									#verticalAlignment : BlNullVerticalAlignment { },
-									#horizontalAlignment : BlNullHorizontalAlignment { },
-									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @233
-									},
-									#shouldUseLargestChild : false,
-									#cellSpacing : 0.0,
-									#interspace : 0.0
-								}
-							},
-							#enabled : true
-						},
-						#layout : BlLinearLayout {
-							#weightSum : 0,
-							#verticalAlignment : @234,
-							#horizontalAlignment : @235,
-							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @237
-							},
-							#shouldUseLargestChild : false,
-							#cellSpacing : 0.0,
-							#interspace : 0.0
-						}
-					},
-					ToButton {
-						#constraints : BlLayoutCommonConstraints {
-							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutFitContentResizer { }
-							},
-							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @83
-							},
-							#constraints : {
-								@85 : BlLinearLayoutConstraints {
-									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @16
-									},
-									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @89
-									},
-									#weight : 1
-								},
-								@13 : BlFrameLayoutConstraints {
-									#vertical : BlFrameLayoutConstraintsVertical {
-										#alignment : BlVerticalCenterAlignment { },
-										#weight : 1.0
-									},
-									#horizontal : BlFrameLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalCenterAlignment { },
-										#weight : 1.0
-									}
-								}
-							},
-							#position : Point [ 0.0, 0.0 ],
-							#margin : @96,
-							#padding : BlInsets {
-								#top : 4.0,
-								#left : 8.0,
-								#bottom : 4.0,
-								#right : 8.0
-							},
-							#minHeight : 0.0,
-							#minWidth : 0.0,
-							#maxHeight : @22,
-							#maxWidth : @22,
-							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @245,
-							#previouslyAccessedConstraintsType : @85,
-							#accountTransformation : false
-						},
-						#visuals : BlCustomVisuals {
-							#geometry : BlRoundedRectangleGeometry {
-								#extent : Point [ 300.0, 25.598 ],
-								#pathCache : BlPathCache {
-									#geometry : @256
-								},
-								#cornerRadii : BlCornerRadii {
-									#topLeft : 6,
-									#topRight : 6,
-									#bottomLeft : 6,
-									#bottomRight : 6
-								},
-								#center : Point [ 150.0, 12.799 ]
-							},
-							#border : BlBorder {
-								#paint : BlColorPaint {
-									#color : @106
-								},
-								#width : 1,
-								#style : BlStrokeStyle {
-									#lineCap : @108,
-									#lineJoin : @109,
-									#miterLimit : 4.0,
-									#dashArray : @110,
-									#dashOffset : 0.0
-								},
-								#opacity : 1.0
-							},
-							#background : BlPaintBackground {
-								#paint : BlColorPaint {
-									#color : @113
-								}
-							},
-							#mouseCursor : @114
-						},
-						#userData : IdentityDictionary {
-							#elementId : BlElementNamedId {
-								#identifier : #button
-							},
-							#stonLabeledIcon : ToLabeledIcon {
-								#constraints : BlLayoutCommonConstraints {
-									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @242
-									},
-									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : BlLayoutMatchParentResizer { }
-									},
-									#constraints : {
-										@85 : BlLinearLayoutConstraints {
-											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : BlTopAlignment { }
-											},
-											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : BlHorizontalStartAlignment { }
-											},
-											#weight : 1
-										}
-									},
-									#position : Point [ 0.0, 0.0 ],
-									#margin : BlInsets {
-										#top : 0.0,
-										#left : 0.0,
-										#bottom : 0.0,
-										#right : 0.0
-									},
-									#padding : @280,
-									#minHeight : 0.0,
-									#minWidth : 0.0,
-									#maxHeight : @22,
-									#maxWidth : @22,
-									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @274,
-									#previouslyAccessedConstraintsType : @85,
-									#accountTransformation : false
-								},
-								#visuals : BlDefaultVisuals { },
-								#userData : IdentityDictionary {
-									#stonToLabel : ToLabel {
-										#constraints : BlLayoutCommonConstraints {
-											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#constraints : {
-												@13 : BlFrameLayoutConstraints {
-													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @145,
-														#weight : 1.0
-													},
-													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @147,
-														#weight : 1.0
-													}
-												}
-											},
-											#position : Point [ 0.0, 0.0 ],
-											#margin : @149,
-											#padding : @149,
-											#minHeight : 0.0,
-											#minWidth : 0.0,
-											#maxHeight : @22,
-											#maxWidth : @22,
-											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @288,
-											#previouslyAccessedConstraintsType : @13,
-											#accountTransformation : false
-										},
-										#visuals : @150,
-										#userData : IdentityDictionary {
-											#stonToLabelText : BlRopedText {
-												#rope : BlAttributeRope {
-													#attributes : [
-														BlFontWeightAttribute {
-															#isOverwritableByStyler : true,
-															#weight : 600
-														},
-														BlFontFamilyDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#name : ''SFMono-Regular''
-														},
-														BlFontSizeDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#size : 14
-														},
-														AlbTextParagraphLineSpacingAttribute {
-															#isOverwritableByStyler : true,
-															#lineSpacing : 1.5
-														},
-														BlTextForegroundAttribute {
-															#isOverwritableByStyler : true,
-															#paint : @160
-														}
-													],
-													#rope : BlCollectionRope {
-														#collection : ''Western Sahara''
-													}
-												}
-											},
-											#enabled : true
-										},
-										#layout : BlFrameLayout { }
-									},
-									#stonToImage : nil,
-									#enabled : true
-								},
-								#layout : BlLinearLayout {
-									#weightSum : 0,
-									#verticalAlignment : BlNullVerticalAlignment { },
-									#horizontalAlignment : BlNullHorizontalAlignment { },
-									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @303
-									},
-									#shouldUseLargestChild : false,
-									#cellSpacing : 0.0,
-									#interspace : 0.0
-								}
-							},
-							#enabled : true
-						},
-						#layout : BlLinearLayout {
-							#weightSum : 0,
-							#verticalAlignment : @304,
-							#horizontalAlignment : @305,
-							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @307
-							},
-							#shouldUseLargestChild : false,
-							#cellSpacing : 0.0,
-							#interspace : 0.0
-						}
-					},
-					ToButton {
-						#constraints : BlLayoutCommonConstraints {
-							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : BlLayoutFitContentResizer { }
-							},
-							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @83
-							},
-							#constraints : {
-								@85 : BlLinearLayoutConstraints {
-									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @16
-									},
-									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @89
-									},
-									#weight : 1
-								},
-								@13 : BlFrameLayoutConstraints {
-									#vertical : BlFrameLayoutConstraintsVertical {
-										#alignment : BlVerticalCenterAlignment { },
-										#weight : 1.0
-									},
-									#horizontal : BlFrameLayoutConstraintsHorizontal {
-										#alignment : BlHorizontalCenterAlignment { },
-										#weight : 1.0
-									}
-								}
-							},
-							#position : Point [ 0.0, 0.0 ],
-							#margin : @96,
-							#padding : BlInsets {
-								#top : 4.0,
-								#left : 8.0,
-								#bottom : 4.0,
-								#right : 8.0
-							},
-							#minHeight : 0.0,
-							#minWidth : 0.0,
-							#maxHeight : @22,
-							#maxWidth : @22,
-							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @315,
-							#previouslyAccessedConstraintsType : @85,
-							#accountTransformation : false
-						},
-						#visuals : BlCustomVisuals {
-							#geometry : BlRoundedRectangleGeometry {
-								#extent : Point [ 300.0, 25.598000000000013 ],
-								#pathCache : BlPathCache {
-									#geometry : @326
-								},
-								#cornerRadii : BlCornerRadii {
-									#topLeft : 6,
-									#topRight : 6,
-									#bottomLeft : 6,
-									#bottomRight : 6
-								},
-								#center : Point [ 150.0, 12.799000000000007 ]
-							},
-							#border : BlBorder {
-								#paint : BlColorPaint {
-									#color : @106
-								},
-								#width : 1,
-								#style : BlStrokeStyle {
-									#lineCap : @108,
-									#lineJoin : @109,
-									#miterLimit : 4.0,
-									#dashArray : @110,
-									#dashOffset : 0.0
-								},
-								#opacity : 1.0
-							},
-							#background : BlPaintBackground {
-								#paint : BlColorPaint {
-									#color : @113
-								}
-							},
-							#mouseCursor : @114
-						},
-						#userData : IdentityDictionary {
-							#elementId : BlElementNamedId {
-								#identifier : #button
-							},
-							#stonLabeledIcon : ToLabeledIcon {
-								#constraints : BlLayoutCommonConstraints {
-									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @312
-									},
-									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : BlLayoutMatchParentResizer { }
-									},
-									#constraints : {
-										@85 : BlLinearLayoutConstraints {
-											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : BlTopAlignment { }
-											},
-											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : BlHorizontalStartAlignment { }
-											},
-											#weight : 1
-										}
-									},
-									#position : Point [ 0.0, 0.0 ],
-									#margin : BlInsets {
-										#top : 0.0,
-										#left : 0.0,
-										#bottom : 0.0,
-										#right : 0.0
-									},
-									#padding : @350,
-									#minHeight : 0.0,
-									#minWidth : 0.0,
-									#maxHeight : @22,
-									#maxWidth : @22,
-									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @344,
-									#previouslyAccessedConstraintsType : @85,
-									#accountTransformation : false
-								},
-								#visuals : BlDefaultVisuals { },
-								#userData : IdentityDictionary {
-									#stonToLabel : ToLabel {
-										#constraints : BlLayoutCommonConstraints {
-											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @140
-											},
-											#constraints : {
-												@13 : BlFrameLayoutConstraints {
-													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @145,
-														#weight : 1.0
-													},
-													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @147,
-														#weight : 1.0
-													}
-												}
-											},
-											#position : Point [ 0.0, 0.0 ],
-											#margin : @149,
-											#padding : @149,
-											#minHeight : 0.0,
-											#minWidth : 0.0,
-											#maxHeight : @22,
-											#maxWidth : @22,
-											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @358,
-											#previouslyAccessedConstraintsType : @13,
-											#accountTransformation : false
-										},
-										#visuals : @150,
-										#userData : IdentityDictionary {
-											#stonToLabelText : BlRopedText {
-												#rope : BlAttributeRope {
-													#attributes : [
-														BlFontWeightAttribute {
-															#isOverwritableByStyler : true,
-															#weight : 600
-														},
-														BlFontFamilyDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#name : ''SFMono-Regular''
-														},
-														BlFontSizeDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#size : 14
-														},
-														AlbTextParagraphLineSpacingAttribute {
-															#isOverwritableByStyler : true,
-															#lineSpacing : 1.5
-														},
-														BlTextForegroundAttribute {
-															#isOverwritableByStyler : true,
-															#paint : @160
-														}
-													],
-													#rope : BlCollectionRope {
-														#collection : ''New Zealand''
-													}
-												}
-											},
-											#enabled : true
-										},
-										#layout : BlFrameLayout { }
-									},
-									#stonToImage : nil,
-									#enabled : true
-								},
-								#layout : BlLinearLayout {
-									#weightSum : 0,
-									#verticalAlignment : BlNullVerticalAlignment { },
-									#horizontalAlignment : BlNullHorizontalAlignment { },
-									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @373
-									},
-									#shouldUseLargestChild : false,
-									#cellSpacing : 0.0,
-									#interspace : 0.0
-								}
-							},
-							#enabled : true
-						},
-						#layout : BlLinearLayout {
-							#weightSum : 0,
-							#verticalAlignment : @374,
-							#horizontalAlignment : @375,
-							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @377
-							},
-							#shouldUseLargestChild : false,
-							#cellSpacing : 0.0,
-							#interspace : 0.0
-						}
-					}
-				],
-				#constraints : BlLayoutCommonConstraints {
-					#vertical : BlLayoutCommonConstraintsAxis {
-						#resizer : @52
-					},
-					#horizontal : BlLayoutCommonConstraintsAxis {
-						#resizer : BlLayoutExactResizer {
-							#size : 300.0
-						}
-					},
-					#constraints : {
-						@13 : BlFrameLayoutConstraints {
-							#vertical : BlFrameLayoutConstraintsVertical {
-								#alignment : BlBottomAlignment { },
-								#weight : 1.0
-							},
-							#horizontal : BlFrameLayoutConstraintsHorizontal {
-								#alignment : @41,
-								#weight : 1.0
-							}
-						}
-					},
-					#position : Point [ 0.0, 0.0 ],
-					#margin : @44,
-					#padding : @44,
-					#minHeight : 0.0,
-					#minWidth : 0.0,
-					#maxHeight : @22,
-					#maxWidth : @22,
-					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @384,
-					#previouslyAccessedConstraintsType : @13,
-					#accountTransformation : false
-				},
-				#visuals : BlCustomVisuals {
-					#background : @46
-				},
-				#userData : IdentityDictionary {
-					#elementId : BlElementNamedId {
-						#identifier : #buttons
-					}
-				},
-				#layout : BlLinearLayout {
-					#weightSum : 0,
-					#verticalAlignment : BlNullVerticalAlignment { },
-					#horizontalAlignment : BlNullHorizontalAlignment { },
-					#orientation : BlLinearLayoutVerticalOrientation {
-						#layout : @392
-					},
-					#shouldUseLargestChild : false,
-					#cellSpacing : 0.0,
-					#interspace : 0.0
-				}
-			}
-		],
-		#constraints : BlLayoutCommonConstraints {
-			#vertical : BlLayoutCommonConstraintsAxis {
-				#resizer : @54
-			},
-			#horizontal : BlLayoutCommonConstraintsAxis {
-				#resizer : @54
-			},
-			#position : Point [ 0.0, 0.0 ],
-			#margin : @21,
-			#padding : @21,
-			#minHeight : 0.0,
-			#minWidth : 0.0,
-			#maxHeight : @22,
-			#maxWidth : @22,
-			#ignoredByLayout : false,
-			#accountTransformation : false
-		},
-		#visuals : BlCustomVisuals {
-			#background : BlPaintBackground {
-				#paint : BlLinearGradientPaint {
-					#stops : [
-						0.0 : Color {
-							#red : 0.4701857282502444,
-							#green : 0.4701857282502444,
-							#blue : 0.823069403714565,
-							#alpha : 1.0
-						},
-						0.5 : Color {
-							#red : 0.17302052785923755,
-							#green : 0.956989247311828,
-							#blue : 0.729227761485826,
-							#alpha : 1.0
-						},
-						1.0 : Color {
-							#red : 0.7214076246334311,
-							#green : 0.9843597262952102,
-							#blue : 0.4310850439882698,
-							#alpha : 1.0
-						}
-					],
-					#start : Point [ 0, 0 ],
-					#end : Point [ 0.0, 600.0 ]
-				}
-			}
-		},
-		#userData : IdentityDictionary {
-			#elementId : BlElementNamedId {
-				#identifier : #body
-			}
-		},
-		#layout : BlFrameLayout { }
-	}
-]'
+<pyStash>
+	^ [ "BlStashSerializer"
+| blinsets1 point2 blframelayout3 blpaintbackground4 blborder5 bllinearlayout6 cursorwithmask7 bltransparentbackground8 blroundedrectanglegeometry9 blinsets10 |
+blinsets1 := BlInsets top: 4.0 right: 8.0 bottom: 4.0 left: 8.0.
+point2 := Point new.
+blframelayout3 := BlFrameLayout new.
+blpaintbackground4 := BlPaintBackground new.
+blborder5 := BlBorderBuilder new.
+bllinearlayout6 := BlLinearLayout horizontal.
+cursorwithmask7 := (CursorWithMask extent: 16 @ 16 depth: 1 fromArray: #(2r0 2r1000000000000000000000000000000 2r1100000000000000000000000000000 2r1110000000000000000000000000000 2r1111000000000000000000000000000 2r1111100000000000000000000000000 2r1111110000000000000000000000000 2r1111111000000000000000000000000 2r1111100000000000000000000000000 2r1111100000000000000000000000000 2r1001100000000000000000000000000 2r110000000000000000000000000 2r110000000000000000000000000 2r11000000000000000000000000 2r11000000000000000000000000 2r0) offset: -1 @ -1) setMaskForm: (Form extent: 16 @ 16 depth: 1 fromArray: #(2r11000000000000000000000000000000 2r11100000000000000000000000000000 2r11110000000000000000000000000000 2r11111000000000000000000000000000 2r11111100000000000000000000000000 2r11111110000000000000000000000000 2r11111111000000000000000000000000 2r11111111100000000000000000000000 2r11111111000000000000000000000000 2r11111110000000000000000000000000 2r11111110000000000000000000000000 2r11001111000000000000000000000000 2r1111000000000000000000000000 2r111100000000000000000000000 2r111100000000000000000000000 2r11000000000000000000000000) offset: 0 @ 0).
+bltransparentbackground8 := BlTransparentBackground new.
+blroundedrectanglegeometry9 := BlRoundedRectangleGeometry cornerRadius: 6.
+blinsets10 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
+{(BlElement new
+   addChildren: {(BlElement new
+         addChildren: {(BlTextElement new
+               id: #questionsLeft;
+               layout: BlBasicLayout uniqueInstance;
+               constraintsDo: [:constraints |  constraints horizontal fitContent.
+                  constraints vertical fitContent.
+                  constraints frame horizontal alignCenter.
+                  constraints margin: (BlInsets all: 15.0) ];
+               text: (BlRopedText new
+                     rope: (BlCollectionRope new
+                           collection: '1 question(s) left';
+                           yourself);
+                     yourself);
+               yourself) . 
+            (BlElement new
+               id: #image;
+               background: (bltransparentbackground8
+                     opacity: 1.0;
+                     yourself);
+               layout: blframelayout3;
+               constraintsDo: [:constraints |  constraints horizontal exact: 320.0.
+                  constraints vertical exact: 320.0.
+                  constraints frame horizontal alignCenter.
+                  constraints frame vertical alignCenter.
+                  constraints margin: (BlInsets top: 40.0 right: 0.0 bottom: 20.0 left: 0.0) ];
+               yourself)};
+         id: #container;
+         background: (BlPaintBackground new
+               opacity: 1.0;
+               paint: (BlColorPaint new
+                     color: (Color r: 1.0 g: 1.0 b: 1.0 alpha: 0.7490196078431373);
+                     yourself);
+               yourself);
+         geometry: (BlRoundedRectangleGeometry cornerRadius: 24);
+         layout: blframelayout3;
+         constraintsDo: [:constraints |  constraints horizontal matchParent.
+            constraints vertical fitContent.
+            constraints margin: (BlInsets top: 20.0 right: 40.0 bottom: 20.0 left: 40.0) ];
+         yourself) . 
+      (BlElement new
+         addChildren: {(ToButton new
+               id: #button;
+               background: (blpaintbackground4
+                     opacity: 1.0;
+                     paint: (BlColorPaint new
+                           color: (Color r: 1.0 g: 1.0 b: 1.0 alpha: 1.0);
+                           yourself);
+                     yourself);
+               border: (blborder5
+                     paint: (BlColorPaint new
+                           color: (Color r: 0.8514173998044966 g: 0.8514173998044966 b: 0.8514173998044966 alpha: 1.0);
+                           yourself);
+                     lineCap: BlStrokeLineCap butt;
+                     lineJoin: BlStrokeLineJoin miter;
+                     build);
+               geometry: blroundedrectanglegeometry9;
+               mouseCursor: cursorwithmask7;
+               layout: (bllinearlayout6
+                     alignNone;
+                     yourself);
+               constraintsDo: [:constraints |  constraints horizontal matchParent.
+                  constraints vertical fitContent.
+                  constraints frame horizontal alignCenter.
+                  constraints frame vertical alignCenter.
+                  constraints padding: blinsets1.
+                  constraints margin: blinsets10 ];
+               beHorizontal;
+               beIconFirst;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
+               iconContainerWidth: 0.0;
+               interspace: 0.0 @ 0.0;
+               label: (ToLabel new
+                     layout: blframelayout3;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent ];
+                     text: (BlRopedText new
+                           rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
+                                       weight: 600;
+                                       yourself) . 
+                                    (BlFontFamilyDefaultAttribute new
+                                       name: 'SFMono-Regular';
+                                       yourself) . 
+                                    (BlFontSizeDefaultAttribute new
+                                       size: 14;
+                                       yourself) . 
+                                    AlbTextParagraphLineSpacingAttribute new . 
+                                    (BlTextForegroundAttribute new
+                                       paint: (Color r: 0.0 g: 0.0 b: 0.0 alpha: 1.0);
+                                       yourself)} rope: (BlCollectionRope new
+                                       collection: 'Timor-Leste';
+                                       yourself));
+                           yourself);
+                     yourself);
+               yourself) . 
+            (ToButton new
+               id: #button;
+               background: blpaintbackground4;
+               border: blborder5 build;
+               geometry: blroundedrectanglegeometry9;
+               mouseCursor: cursorwithmask7;
+               layout: bllinearlayout6;
+               constraintsDo: [:constraints |  constraints horizontal matchParent.
+                  constraints vertical fitContent.
+                  constraints frame horizontal alignCenter.
+                  constraints frame vertical alignCenter.
+                  constraints padding: blinsets1.
+                  constraints margin: blinsets10 ];
+               beHorizontal;
+               beIconFirst;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
+               iconContainerWidth: 0.0;
+               interspace: 0.0 @ 0.0;
+               label: (ToLabel new
+                     layout: blframelayout3;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent ];
+                     text: (BlRopedText new
+                           rope: (BlAttributeRope attributes: {BlFontWeightAttribute new . 
+                                    BlFontFamilyDefaultAttribute new . 
+                                    BlFontSizeDefaultAttribute new . 
+                                    AlbTextParagraphLineSpacingAttribute new . 
+                                    BlTextForegroundAttribute new} rope: (BlCollectionRope new
+                                       collection: 'Mexico';
+                                       yourself));
+                           yourself);
+                     yourself);
+               yourself) . 
+            (ToButton new
+               id: #button;
+               background: blpaintbackground4;
+               border: blborder5 build;
+               geometry: blroundedrectanglegeometry9;
+               mouseCursor: cursorwithmask7;
+               layout: bllinearlayout6;
+               constraintsDo: [:constraints |  constraints horizontal matchParent.
+                  constraints vertical fitContent.
+                  constraints frame horizontal alignCenter.
+                  constraints frame vertical alignCenter.
+                  constraints padding: blinsets1.
+                  constraints margin: blinsets10 ];
+               beHorizontal;
+               beIconFirst;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
+               iconContainerWidth: 0.0;
+               interspace: 0.0 @ 0.0;
+               label: (ToLabel new
+                     layout: blframelayout3;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent ];
+                     text: (BlRopedText new
+                           rope: (BlAttributeRope attributes: {BlFontWeightAttribute new . 
+                                    BlFontFamilyDefaultAttribute new . 
+                                    BlFontSizeDefaultAttribute new . 
+                                    AlbTextParagraphLineSpacingAttribute new . 
+                                    BlTextForegroundAttribute new} rope: (BlCollectionRope new
+                                       collection: 'Western Sahara';
+                                       yourself));
+                           yourself);
+                     yourself);
+               yourself) . 
+            (ToButton new
+               id: #button;
+               background: blpaintbackground4;
+               border: blborder5 build;
+               geometry: blroundedrectanglegeometry9;
+               mouseCursor: cursorwithmask7;
+               layout: bllinearlayout6;
+               constraintsDo: [:constraints |  constraints horizontal matchParent.
+                  constraints vertical fitContent.
+                  constraints frame horizontal alignCenter.
+                  constraints frame vertical alignCenter.
+                  constraints padding: blinsets1.
+                  constraints margin: blinsets10 ];
+               beHorizontal;
+               beIconFirst;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
+               iconContainerWidth: 0.0;
+               interspace: 0.0 @ 0.0;
+               label: (ToLabel new
+                     layout: blframelayout3;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent ];
+                     text: (BlRopedText new
+                           rope: (BlAttributeRope attributes: {BlFontWeightAttribute new . 
+                                    BlFontFamilyDefaultAttribute new . 
+                                    BlFontSizeDefaultAttribute new . 
+                                    AlbTextParagraphLineSpacingAttribute new . 
+                                    BlTextForegroundAttribute new} rope: (BlCollectionRope new
+                                       collection: 'New Zealand';
+                                       yourself));
+                           yourself);
+                     yourself);
+               yourself)};
+         id: #buttons;
+         background: bltransparentbackground8;
+         layout: (BlLinearLayout vertical
+               alignNone;
+               yourself);
+         constraintsDo: [:constraints |  constraints horizontal exact: 300.0.
+            constraints vertical fitContent.
+            constraints frame horizontal alignCenter.
+            constraints frame vertical alignBottom ];
+         yourself)};
+   id: #body;
+   background: (BlPaintBackground new
+         opacity: 1.0;
+         paint: (BlLinearGradientPaint new
+               stops: {(0.0 -> (Color r: 0.4701857282502444 g: 0.4701857282502444 b: 0.823069403714565 alpha: 1.0)) . 
+                  (0.5 -> (Color r: 0.17302052785923755 g: 0.956989247311828 b: 0.729227761485826 alpha: 1.0)) . 
+                  (1.0 -> (Color r: 0.7214076246334311 g: 0.9843597262952102 b: 0.4310850439882698 alpha: 1.0))};
+               start: 0.0 @ 0.0;
+               end: 0.0 @ 600;
+               yourself);
+         yourself);
+   layout: blframelayout3;
+   constraintsDo: [:constraints |  constraints horizontal matchParent.
+      constraints vertical matchParent ];
+   yourself)}
+	] value
 ]

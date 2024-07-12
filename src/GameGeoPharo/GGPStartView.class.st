@@ -13,7 +13,7 @@ GGPStartView class >> pyston [
 	"This class has been generated using Pyramid.
 
 	By: YannLEGOFF
-	2024-06-25 09:57:47"
+	2024-07-12 15:57:57"
 
 	<pySTON>
 	^ '[
@@ -44,16 +44,21 @@ GGPStartView class >> pyston [
 							},
 							#position : Point [ 0.0, 0.0 ],
 							#margin : BlInsets {
+								#top : 10.0,
+								#left : 0.0,
+								#bottom : 0.0,
+								#right : 0.0
+							},
+							#padding : BlInsets {
 								#top : 0.0,
 								#left : 0.0,
 								#bottom : 0.0,
 								#right : 0.0
 							},
-							#padding : @20,
 							#minHeight : 0.0,
 							#minWidth : 0.0,
 							#maxHeight : Float [ #infinity ],
-							#maxWidth : @21,
+							#maxWidth : @22,
 							#ignoredByLayout : false,
 							#previouslyAccessedConstraints : @14,
 							#previouslyAccessedConstraintsType : @13,
@@ -109,13 +114,13 @@ GGPStartView class >> pyston [
 						#bottom : 20.0,
 						#right : 40.0
 					},
-					#padding : @20,
+					#padding : @21,
 					#minHeight : 0.0,
 					#minWidth : 0.0,
-					#maxHeight : @21,
-					#maxWidth : @21,
+					#maxHeight : @22,
+					#maxWidth : @22,
 					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @37,
+					#previouslyAccessedConstraints : @38,
 					#previouslyAccessedConstraintsType : @13,
 					#accountTransformation : false
 				},
@@ -123,7 +128,7 @@ GGPStartView class >> pyston [
 					#geometry : BlRoundedRectangleGeometry {
 						#extent : Point [ 720.0, 70.0 ],
 						#pathCache : BlPathCache {
-							#geometry : @45
+							#geometry : @46
 						},
 						#cornerRadii : BlCornerRadii {
 							#topLeft : 24,
@@ -186,10 +191,10 @@ GGPStartView class >> pyston [
 					},
 					#minHeight : 0.0,
 					#minWidth : 0.0,
-					#maxHeight : @21,
-					#maxWidth : @21,
+					#maxHeight : @22,
+					#maxWidth : @22,
 					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @61,
+					#previouslyAccessedConstraints : @62,
 					#previouslyAccessedConstraintsType : @13,
 					#accountTransformation : false
 				},
@@ -197,13 +202,7 @@ GGPStartView class >> pyston [
 					#geometry : BlRoundedRectangleGeometry {
 						#extent : Point [ 117.62599999999998, 25.598000000000013 ],
 						#pathCache : BlPathCache {
-							#geometry : @69,
-							#strokedBounds : BlBounds {
-								#left : 0.0,
-								#top : 0.0,
-								#right : 117.62599999999998,
-								#bottom : 25.598000000000013
-							}
+							#geometry : @70
 						},
 						#cornerRadii : BlCornerRadii {
 							#topLeft : 6,
@@ -222,7 +221,7 @@ GGPStartView class >> pyston [
 								#alpha : 1.0
 							}
 						},
-						#width : 1,
+						#width : 1.0,
 						#style : BlStrokeStyle {
 							#lineCap : BlStrokeLineButtCap { },
 							#lineJoin : BlStrokeLineMiterJoin { },
@@ -296,32 +295,32 @@ GGPStartView class >> pyston [
 								#resizer : @10
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @35
+								#resizer : @36
 							},
 							#constraints : {
 								Class [ #BlLinearLayout ] : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @39
+										#alignment : @40
 									},
 									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @41
+										#alignment : @42
 									},
 									#weight : 1
 								}
 							},
 							#position : Point [ 0.0, 0.0 ],
-							#margin : @20,
-							#padding : @20,
+							#margin : @21,
+							#padding : @21,
 							#minHeight : 0.0,
 							#minWidth : 0.0,
-							#maxHeight : @21,
-							#maxWidth : @21,
+							#maxHeight : @22,
+							#maxWidth : @22,
 							#ignoredByLayout : false,
 							#previouslyAccessedConstraints : @99,
 							#previouslyAccessedConstraintsType : @98,
 							#accountTransformation : false
 						},
-						#visuals : @22,
+						#visuals : @23,
 						#userData : IdentityDictionary {
 							#stonToLabel : ToLabel {
 								#constraints : BlLayoutCommonConstraints {
@@ -334,28 +333,28 @@ GGPStartView class >> pyston [
 									#constraints : {
 										@13 : BlFrameLayoutConstraints {
 											#vertical : BlFrameLayoutConstraintsVertical {
-												#alignment : @39,
+												#alignment : @40,
 												#weight : 1.0
 											},
 											#horizontal : BlFrameLayoutConstraintsHorizontal {
-												#alignment : @41,
+												#alignment : @42,
 												#weight : 1.0
 											}
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @20,
-									#padding : @20,
+									#margin : @21,
+									#padding : @21,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @22,
+									#maxWidth : @22,
 									#ignoredByLayout : false,
 									#previouslyAccessedConstraints : @109,
 									#previouslyAccessedConstraintsType : @13,
 									#accountTransformation : false
 								},
-								#visuals : @22,
+								#visuals : @23,
 								#userData : IdentityDictionary {
 									#stonToLabelText : BlRopedText {
 										#rope : BlAttributeRope {
@@ -388,7 +387,7 @@ GGPStartView class >> pyston [
 									},
 									#enabled : true
 								},
-								#layout : BlFrameLayout { }
+								#layout : @56
 							},
 							#stonToImage : nil,
 							#enabled : true
@@ -398,7 +397,7 @@ GGPStartView class >> pyston [
 							#verticalAlignment : BlNullVerticalAlignment { },
 							#horizontalAlignment : BlNullHorizontalAlignment { },
 							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @125
+								#layout : @124
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -409,10 +408,10 @@ GGPStartView class >> pyston [
 				},
 				#layout : BlLinearLayout {
 					#weightSum : 0,
-					#verticalAlignment : @126,
-					#horizontalAlignment : @127,
+					#verticalAlignment : @125,
+					#horizontalAlignment : @126,
 					#orientation : BlLinearLayoutHorizontalOrientation {
-						#layout : @129
+						#layout : @128
 					},
 					#shouldUseLargestChild : false,
 					#cellSpacing : 0.0,
@@ -422,18 +421,18 @@ GGPStartView class >> pyston [
 		],
 		#constraints : BlLayoutCommonConstraints {
 			#vertical : BlLayoutCommonConstraintsAxis {
-				#resizer : @35
+				#resizer : @36
 			},
 			#horizontal : BlLayoutCommonConstraintsAxis {
-				#resizer : @35
+				#resizer : @36
 			},
 			#position : Point [ 0.0, 0.0 ],
-			#margin : @20,
-			#padding : @20,
+			#margin : @21,
+			#padding : @21,
 			#minHeight : 0.0,
 			#minWidth : 0.0,
-			#maxHeight : @21,
-			#maxWidth : @21,
+			#maxHeight : @22,
+			#maxWidth : @22,
 			#ignoredByLayout : false,
 			#accountTransformation : false
 		},
@@ -470,7 +469,7 @@ GGPStartView class >> pyston [
 				#identifier : #body
 			}
 		},
-		#layout : BlFrameLayout { }
+		#layout : @56
 	}
 ]'
 ]
