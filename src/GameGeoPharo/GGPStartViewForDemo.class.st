@@ -70,12 +70,10 @@ blframelayout1 := BlFrameLayout new.
             constraints frame vertical alignCenter.
             constraints padding: (BlInsets top: 4.0 right: 8.0 bottom: 4.0 left: 8.0) ];
          beHorizontal;
-         beIconFirst;
          flexible: false;
          icon: nil;
          iconContainerHeight: 0.0;
          iconContainerWidth: 0.0;
-         interspace: 0.0 @ 0.0;
          label: (ToLabel new
                layout: blframelayout1;
                constraintsDo: [:constraints |  constraints horizontal fitContent.

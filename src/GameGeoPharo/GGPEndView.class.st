@@ -72,12 +72,10 @@ blframelayout2 := BlFrameLayout new.
             constraints padding: (BlInsets top: 4.0 right: 8.0 bottom: 4.0 left: 8.0).
             constraints margin: (BlInsets top: 0.0 right: 0.0 bottom: 120.0 left: 0.0) ];
          beHorizontal;
-         beIconFirst;
          flexible: false;
          icon: nil;
          iconContainerHeight: 0.0;
          iconContainerWidth: 0.0;
-         interspace: 0.0 @ 0.0;
          label: (ToLabel new
                layout: blframelayout2;
                constraintsDo: [:constraints |  constraints horizontal fitContent.

@@ -91,12 +91,10 @@ blinsets10 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
                   constraints padding: blinsets1.
                   constraints margin: blinsets10 ];
                beHorizontal;
-               beIconFirst;
                flexible: false;
                icon: nil;
                iconContainerHeight: 0.0;
                iconContainerWidth: 0.0;
-               interspace: 0.0 @ 0.0;
                label: (ToLabel new
                      layout: blframelayout3;
                      constraintsDo: [:constraints |  constraints horizontal fitContent.
@@ -134,12 +132,10 @@ blinsets10 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
                   constraints padding: blinsets1.
                   constraints margin: blinsets10 ];
                beHorizontal;
-               beIconFirst;
                flexible: false;
                icon: nil;
                iconContainerHeight: 0.0;
                iconContainerWidth: 0.0;
-               interspace: 0.0 @ 0.0;
                label: (ToLabel new
                      layout: blframelayout3;
                      constraintsDo: [:constraints |  constraints horizontal fitContent.
@@ -169,12 +165,10 @@ blinsets10 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
                   constraints padding: blinsets1.
                   constraints margin: blinsets10 ];
                beHorizontal;
-               beIconFirst;
                flexible: false;
                icon: nil;
                iconContainerHeight: 0.0;
                iconContainerWidth: 0.0;
-               interspace: 0.0 @ 0.0;
                label: (ToLabel new
                      layout: blframelayout3;
                      constraintsDo: [:constraints |  constraints horizontal fitContent.
@@ -204,12 +198,10 @@ blinsets10 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
                   constraints padding: blinsets1.
                   constraints margin: blinsets10 ];
                beHorizontal;
-               beIconFirst;
                flexible: false;
                icon: nil;
                iconContainerHeight: 0.0;
                iconContainerWidth: 0.0;
-               interspace: 0.0 @ 0.0;
                label: (ToLabel new
                      layout: blframelayout3;
                      constraintsDo: [:constraints |  constraints horizontal fitContent.
