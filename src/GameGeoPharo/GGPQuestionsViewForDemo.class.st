@@ -10,98 +10,99 @@ Class {
 
 { #category : 'pyramid-serialized-bloc' }
 GGPQuestionsViewForDemo class >> pyston [
-<pyStash>
-	^ [ "BlStashSerializer"
-| blinsets1 point2 blborder3 blframelayout4 cursorwithmask5 blpaintbackground6 bllinearlayout7 blroundedrectanglegeometry8 blinsets9 |
-blinsets1 := BlInsets top: 4.0 right: 8.0 bottom: 4.0 left: 8.0.
-point2 := Point new.
-blborder3 := BlBorderBuilder new.
-blframelayout4 := BlFrameLayout new.
-cursorwithmask5 := (CursorWithMask extent: 16 @ 16 depth: 1 fromArray: #(2r0 2r1000000000000000000000000000000 2r1100000000000000000000000000000 2r1110000000000000000000000000000 2r1111000000000000000000000000000 2r1111100000000000000000000000000 2r1111110000000000000000000000000 2r1111111000000000000000000000000 2r1111100000000000000000000000000 2r1111100000000000000000000000000 2r1001100000000000000000000000000 2r110000000000000000000000000 2r110000000000000000000000000 2r11000000000000000000000000 2r11000000000000000000000000 2r0) offset: -1 @ -1) setMaskForm: (Form extent: 16 @ 16 depth: 1 fromArray: #(2r11000000000000000000000000000000 2r11100000000000000000000000000000 2r11110000000000000000000000000000 2r11111000000000000000000000000000 2r11111100000000000000000000000000 2r11111110000000000000000000000000 2r11111111000000000000000000000000 2r11111111100000000000000000000000 2r11111111000000000000000000000000 2r11111110000000000000000000000000 2r11111110000000000000000000000000 2r11001111000000000000000000000000 2r1111000000000000000000000000 2r111100000000000000000000000 2r111100000000000000000000000 2r11000000000000000000000000) offset: 0 @ 0).
-blpaintbackground6 := BlPaintBackground new.
-bllinearlayout7 := BlLinearLayout horizontal.
-blroundedrectanglegeometry8 := BlRoundedRectangleGeometry cornerRadius: 6.
-blinsets9 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
+	"This class has been generated using Pyramid.
+
+	By: YannLEGOFF
+	2024-07-23 09:41:33"
+
+	<pyStash>
+	^ [ | cursorwithmask1 blinsets2 blcolorpaint3 blropedtext4 blpaintbackground5 blinsets6 |
+cursorwithmask1 := Cursor classPool at: #NormalCursor.
+blinsets2 := BlInsets top: 4.0 right: 8.0 bottom: 4.0 left: 8.0.
+blcolorpaint3 := BlColorPaint new.
+blropedtext4 := BlRopedText new.
+blpaintbackground5 := BlPaintBackground new.
+blinsets6 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
 {(BlElement new
+   id: #body;
+   layout: BlFrameLayout new;
+   background: (BlPaintBackground new
+         paint: (BlColorPaint new
+               color: (Color r: 0.43499511241446726 g: 0.6080156402737048 b: 0.9530791788856305 alpha: 1.0);
+               yourself);
+         opacity: 1.0;
+         yourself);
    addChildren: {(BlElement new
+         id: #container;
+         layout: BlFrameLayout new;
+         background: (BlPaintBackground new
+               paint: (BlColorPaint new
+                     color: (Color r: 1.0 g: 1.0 b: 1.0 alpha: 0.7294117647058823);
+                     yourself);
+               opacity: 1.0;
+               yourself);
          addChildren: {(BlTextElement new
-               id: #questionsLeft;
-               layout: BlBasicLayout uniqueInstance;
-               constraintsDo: [:constraints |  constraints horizontal fitContent.
-                  constraints vertical fitContent.
-                  constraints frame horizontal alignCenter.
-                  constraints margin: (BlInsets all: 15.0) ];
-               text: (BlRopedText new
+               text: (blropedtext4
                      rope: (BlAttributeRope attributes: {(BlFontSizeAttribute new
                                  size: 10;
                                  yourself)} rope: (BlCollectionRope new
                                  collection: 'Geo Game';
                                  yourself));
                      yourself);
+               id: #questionsLeft;
+               constraintsDo: [:constraints |  constraints horizontal fitContent.
+                  constraints vertical fitContent.
+                  constraints frame horizontal alignCenter.
+                  constraints margin: (BlInsets all: 15.0) ];
+               text: blropedtext4;
                yourself) . 
             (BlElement new
                id: #image;
-               layout: blframelayout4;
+               layout: BlFrameLayout new;
                constraintsDo: [:constraints |  constraints horizontal exact: 320.0.
                   constraints vertical exact: 320.0.
                   constraints frame horizontal alignCenter.
                   constraints frame vertical alignCenter.
                   constraints margin: (BlInsets top: 40.0 right: 0.0 bottom: 20.0 left: 0.0) ];
                yourself)};
-         id: #container;
-         background: (BlPaintBackground new
-               opacity: 1.0;
-               paint: (BlColorPaint new
-                     color: (Color r: 1.0 g: 1.0 b: 1.0 alpha: 0.7294117647058823);
-                     yourself);
-               yourself);
-         layout: blframelayout4;
          constraintsDo: [:constraints |  constraints horizontal matchParent.
             constraints vertical fitContent.
             constraints margin: (BlInsets top: 20.0 right: 40.0 bottom: 20.0 left: 40.0) ];
          yourself) . 
       (BlElement new
+         id: #buttons;
+         layout: BlLinearLayout vertical;
          addChildren: {(ToButton new
                id: #button;
-               background: (blpaintbackground6
-                     opacity: 1.0;
+               layout: BlLinearLayout horizontal;
+               background: (blpaintbackground5
                      paint: (BlColorPaint new
                            color: (Color r: 1.0 g: 1.0 b: 1.0 alpha: 1.0);
                            yourself);
+                     opacity: 1.0;
                      yourself);
-               border: (blborder3
-                     paint: (BlColorPaint new
+               border: (BlBorderBuilder new
+                     paint: (blcolorpaint3
                            color: (Color r: 0.8514173998044966 g: 0.8514173998044966 b: 0.8514173998044966 alpha: 1.0);
                            yourself);
-                     lineCap: BlStrokeLineCap butt;
-                     lineJoin: BlStrokeLineJoin miter;
                      build);
-               geometry: blroundedrectanglegeometry8;
-               mouseCursor: cursorwithmask5;
-               layout: (bllinearlayout7
-                     alignNone;
-                     yourself);
+               geometry: (BlRoundedRectangleGeometry cornerRadius: 6);
+               mouseCursor: cursorwithmask1;
                constraintsDo: [:constraints |  constraints horizontal matchParent.
                   constraints vertical fitContent.
                   constraints frame horizontal alignCenter.
                   constraints frame vertical alignCenter.
-                  constraints padding: blinsets1.
-                  constraints margin: blinsets9 ];
-               beHorizontal;
-               flexible: false;
-               icon: nil;
-               iconContainerHeight: 0.0;
-               iconContainerWidth: 0.0;
+                  constraints padding: blinsets2.
+                  constraints margin: blinsets6 ];
+               endInterspace: 0;
+               isHorizontal;
                label: (ToLabel new
-                     layout: blframelayout4;
-                     constraintsDo: [:constraints |  constraints horizontal fitContent.
-                        constraints vertical fitContent ];
                      text: (BlRopedText new
                            rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
                                        weight: 600;
                                        yourself) . 
                                     (BlFontFamilyDefaultAttribute new
-                                       name: 'SFMono-Regular';
+                                       name: 'Courier';
                                        yourself) . 
                                     (BlFontSizeDefaultAttribute new
                                        size: 14;
@@ -113,126 +114,181 @@ blinsets9 := BlInsets top: 0.0 right: 0.0 bottom: 20.0 left: 0.0.
                                        collection: 'Start the main game';
                                        yourself));
                            yourself);
+                     layout: BlFrameLayout new;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent.
+                        constraints frame horizontal alignNone.
+                        constraints frame vertical alignNone ];
                      yourself);
+               endElement: nil;
+               startAlignment: nil;
+               beStartToEnd;
+               startInterspace: 0;
+               iconContainerWidth: 0.0;
+               endAlignment: nil;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
                yourself) . 
             (ToButton new
                id: #button;
-               background: blpaintbackground6;
-               border: blborder3 build;
-               geometry: blroundedrectanglegeometry8;
-               mouseCursor: cursorwithmask5;
-               layout: bllinearlayout7;
+               layout: BlLinearLayout horizontal;
+               background: blpaintbackground5;
+               border: (BlBorderBuilder new
+                     paint: blcolorpaint3;
+                     build);
+               geometry: (BlRoundedRectangleGeometry cornerRadius: 6);
+               mouseCursor: cursorwithmask1;
                constraintsDo: [:constraints |  constraints horizontal matchParent.
                   constraints vertical fitContent.
                   constraints frame horizontal alignCenter.
                   constraints frame vertical alignCenter.
-                  constraints padding: blinsets1.
-                  constraints margin: blinsets9 ];
-               beHorizontal;
-               flexible: false;
-               icon: nil;
-               iconContainerHeight: 0.0;
-               iconContainerWidth: 0.0;
+                  constraints padding: blinsets2.
+                  constraints margin: blinsets6 ];
+               endInterspace: 0;
                label: (ToLabel new
-                     layout: blframelayout4;
-                     constraintsDo: [:constraints |  constraints horizontal fitContent.
-                        constraints vertical fitContent ];
                      text: (BlRopedText new
-                           rope: (BlAttributeRope attributes: {BlFontWeightAttribute new . 
-                                    BlFontFamilyDefaultAttribute new . 
-                                    BlFontSizeDefaultAttribute new . 
+                           rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
+                                       weight: 600;
+                                       yourself) . 
+                                    (BlFontFamilyDefaultAttribute new
+                                       name: 'Courier';
+                                       yourself) . 
+                                    (BlFontSizeDefaultAttribute new
+                                       size: 14;
+                                       yourself) . 
                                     AlbTextParagraphLineSpacingAttribute new . 
-                                    BlTextForegroundAttribute new} rope: (BlCollectionRope new
+                                    (BlTextForegroundAttribute new
+                                       paint: (Color r: 0.0 g: 0.0 b: 0.0 alpha: 1.0);
+                                       yourself)} rope: (BlCollectionRope new
                                        collection: 'Start the main game';
                                        yourself));
                            yourself);
+                     layout: BlFrameLayout new;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent.
+                        constraints frame horizontal alignNone.
+                        constraints frame vertical alignNone ];
                      yourself);
+               startAlignment: nil;
+               endElement: nil;
+               startInterspace: 0;
+               beStartToEnd;
+               iconContainerWidth: 0.0;
+               isHorizontal;
+               endAlignment: nil;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
                yourself) . 
             (ToButton new
                id: #button;
-               background: blpaintbackground6;
-               border: blborder3 build;
-               geometry: blroundedrectanglegeometry8;
-               mouseCursor: cursorwithmask5;
-               layout: bllinearlayout7;
+               layout: BlLinearLayout horizontal;
+               background: blpaintbackground5;
+               border: (BlBorderBuilder new
+                     paint: blcolorpaint3;
+                     build);
+               geometry: (BlRoundedRectangleGeometry cornerRadius: 6);
+               mouseCursor: cursorwithmask1;
                constraintsDo: [:constraints |  constraints horizontal matchParent.
                   constraints vertical fitContent.
                   constraints frame horizontal alignCenter.
                   constraints frame vertical alignCenter.
-                  constraints padding: blinsets1.
-                  constraints margin: blinsets9 ];
-               beHorizontal;
-               flexible: false;
-               icon: nil;
-               iconContainerHeight: 0.0;
-               iconContainerWidth: 0.0;
+                  constraints padding: blinsets2.
+                  constraints margin: blinsets6 ];
+               endInterspace: 0;
                label: (ToLabel new
-                     layout: blframelayout4;
-                     constraintsDo: [:constraints |  constraints horizontal fitContent.
-                        constraints vertical fitContent ];
                      text: (BlRopedText new
-                           rope: (BlAttributeRope attributes: {BlFontWeightAttribute new . 
-                                    BlFontFamilyDefaultAttribute new . 
-                                    BlFontSizeDefaultAttribute new . 
+                           rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
+                                       weight: 600;
+                                       yourself) . 
+                                    (BlFontFamilyDefaultAttribute new
+                                       name: 'Courier';
+                                       yourself) . 
+                                    (BlFontSizeDefaultAttribute new
+                                       size: 14;
+                                       yourself) . 
                                     AlbTextParagraphLineSpacingAttribute new . 
-                                    BlTextForegroundAttribute new} rope: (BlCollectionRope new
+                                    (BlTextForegroundAttribute new
+                                       paint: (Color r: 0.0 g: 0.0 b: 0.0 alpha: 1.0);
+                                       yourself)} rope: (BlCollectionRope new
                                        collection: 'Start the main game';
                                        yourself));
                            yourself);
+                     layout: BlFrameLayout new;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent.
+                        constraints frame horizontal alignNone.
+                        constraints frame vertical alignNone ];
                      yourself);
+               startAlignment: nil;
+               endElement: nil;
+               startInterspace: 0;
+               beStartToEnd;
+               iconContainerWidth: 0.0;
+               isHorizontal;
+               endAlignment: nil;
+               flexible: false;
+               icon: nil;
+               iconContainerHeight: 0.0;
                yourself) . 
             (ToButton new
                id: #button;
-               background: blpaintbackground6;
-               border: blborder3 build;
-               geometry: blroundedrectanglegeometry8;
-               mouseCursor: cursorwithmask5;
-               layout: bllinearlayout7;
+               layout: BlLinearLayout horizontal;
+               background: blpaintbackground5;
+               border: (BlBorderBuilder new
+                     paint: blcolorpaint3;
+                     build);
+               geometry: (BlRoundedRectangleGeometry cornerRadius: 6);
+               mouseCursor: cursorwithmask1;
                constraintsDo: [:constraints |  constraints horizontal matchParent.
                   constraints vertical fitContent.
                   constraints frame horizontal alignCenter.
                   constraints frame vertical alignCenter.
-                  constraints padding: blinsets1.
-                  constraints margin: blinsets9 ];
-               beHorizontal;
-               flexible: false;
-               icon: nil;
+                  constraints padding: blinsets2.
+                  constraints margin: blinsets6 ];
+               endInterspace: 0;
                iconContainerHeight: 0.0;
-               iconContainerWidth: 0.0;
                label: (ToLabel new
-                     layout: blframelayout4;
-                     constraintsDo: [:constraints |  constraints horizontal fitContent.
-                        constraints vertical fitContent ];
                      text: (BlRopedText new
-                           rope: (BlAttributeRope attributes: {BlFontWeightAttribute new . 
-                                    BlFontFamilyDefaultAttribute new . 
-                                    BlFontSizeDefaultAttribute new . 
+                           rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
+                                       weight: 600;
+                                       yourself) . 
+                                    (BlFontFamilyDefaultAttribute new
+                                       name: 'Courier';
+                                       yourself) . 
+                                    (BlFontSizeDefaultAttribute new
+                                       size: 14;
+                                       yourself) . 
                                     AlbTextParagraphLineSpacingAttribute new . 
-                                    BlTextForegroundAttribute new} rope: (BlCollectionRope new
+                                    (BlTextForegroundAttribute new
+                                       paint: (Color r: 0.0 g: 0.0 b: 0.0 alpha: 1.0);
+                                       yourself)} rope: (BlCollectionRope new
                                        collection: 'Start the main game';
                                        yourself));
                            yourself);
+                     layout: BlFrameLayout new;
+                     constraintsDo: [:constraints |  constraints horizontal fitContent.
+                        constraints vertical fitContent.
+                        constraints frame horizontal alignNone.
+                        constraints frame vertical alignNone ];
                      yourself);
+               endElement: nil;
+               startAlignment: nil;
+               isHorizontal;
+               startInterspace: 0;
+               iconContainerWidth: 0.0;
+               beStartToEnd;
+               endAlignment: nil;
+               flexible: false;
+               icon: nil;
                yourself)};
-         id: #buttons;
-         layout: (BlLinearLayout vertical
-               alignNone;
-               yourself);
          constraintsDo: [:constraints |  constraints horizontal exact: 300.0.
             constraints vertical fitContent.
             constraints frame horizontal alignCenter.
             constraints frame vertical alignBottom ];
          yourself)};
-   id: #body;
-   background: (BlPaintBackground new
-         opacity: 1.0;
-         paint: (BlColorPaint new
-               color: (Color r: 0.4340175953079179 g: 0.6089931573802542 b: 0.9530791788856305 alpha: 1.0);
-               yourself);
-         yourself);
-   layout: blframelayout4;
    constraintsDo: [:constraints |  constraints horizontal matchParent.
       constraints vertical matchParent ];
-   yourself)}
-	] value
+   yourself)} ] value
 ]
