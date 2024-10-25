@@ -125,13 +125,11 @@ blcolorpaint6 := BlColorPaint new.
                startAlignment: nil;
                endElement: nil;
                startInterspace: 0;
-               iconContainerWidth: 0.0;
                beStartToEnd;
                isHorizontal;
                endAlignment: nil;
                flexible: false;
                icon: nil;
-               iconContainerHeight: 0.0;
                yourself) . 
             (ToButton new
                id: #button;
@@ -149,7 +147,6 @@ blcolorpaint6 := BlColorPaint new.
                   constraints padding: blinsets3.
                   constraints margin: blinsets5 ];
                endInterspace: 0;
-               iconContainerHeight: 0.0;
                label: (ToLabel new
                      text: (BlRopedText new
                            rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
@@ -177,7 +174,6 @@ blcolorpaint6 := BlColorPaint new.
                endElement: nil;
                startAlignment: nil;
                startInterspace: 0;
-               iconContainerWidth: 0.0;
                isHorizontal;
                endAlignment: nil;
                flexible: false;
@@ -229,11 +225,9 @@ blcolorpaint6 := BlColorPaint new.
                isHorizontal;
                startAlignment: nil;
                startInterspace: 0;
-               iconContainerWidth: 0.0;
                endAlignment: nil;
                flexible: false;
                icon: nil;
-               iconContainerHeight: 0.0;
                yourself) . 
             (ToButton new
                id: #button;
@@ -251,7 +245,6 @@ blcolorpaint6 := BlColorPaint new.
                   constraints padding: blinsets3.
                   constraints margin: blinsets5 ];
                endInterspace: 0;
-               iconContainerHeight: 0.0;
                isHorizontal;
                endElement: nil;
                label: (ToLabel new
@@ -280,7 +273,6 @@ blcolorpaint6 := BlColorPaint new.
                      yourself);
                startAlignment: nil;
                startInterspace: 0;
-               iconContainerWidth: 0.0;
                beStartToEnd;
                endAlignment: nil;
                flexible: false;

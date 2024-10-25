@@ -87,7 +87,6 @@ blropedtext1 := BlRopedText new.
             constraints padding: (BlInsets top: 4.0 right: 8.0 bottom: 4.0 left: 8.0).
             constraints margin: (BlInsets top: 0.0 right: 0.0 bottom: 120.0 left: 0.0) ];
          endInterspace: 0;
-         iconContainerHeight: 0.0;
          label: (ToLabel new
                text: (BlRopedText new
                      rope: (BlAttributeRope attributes: {(BlFontWeightAttribute new
@@ -116,7 +115,6 @@ blropedtext1 := BlRopedText new.
          startAlignment: nil;
          beStartToEnd;
          startInterspace: 0;
-         iconContainerWidth: 0.0;
          endAlignment: nil;
          flexible: false;
          isHorizontal;

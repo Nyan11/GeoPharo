@@ -105,12 +105,10 @@ blropedtext1 := BlRopedText new.
          endElement: nil;
          startAlignment: nil;
          startInterspace: 0;
-         iconContainerWidth: 0.0;
          beStartToEnd;
          endAlignment: nil;
          flexible: false;
          icon: nil;
-         iconContainerHeight: 0.0;
          yourself)};
    constraintsDo: [:constraints |  constraints horizontal matchParent.
       constraints vertical matchParent ];
